@@ -1,0 +1,92 @@
+#fav-list{
+    display: grid;
+    width: 90%;
+    margin: auto;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: auto;
+    gap: 20px;
+}
+#fav-list > div{
+    padding: 10px;
+    margin-top: 40px;
+    overflow: visible;
+}
+#fav-list > div:hover{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    padding: 20px;
+    cursor: pointer;
+}
+#fav-list > div > img{
+    width: 300px;
+    height: 400px;
+}
+#fav-list > div > img ~ img{
+    width: 30px;
+    height: 30px;
+    float: right;
+    background-color: white;
+    padding: 7px;
+    border-radius: 15px;
+    position: absolute;
+    transform: translate(-50px, 10px);
+}
+#fav-list > div > img ~ img:hover{
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+}
+#fav-list > div > h4{
+    margin-top: 10px;
+    font-weight: 500;
+}
+#fav-list > div > h5{
+    font-weight: bold;
+}
+#fav-list > div > p{
+    color: #5D5E5C; 
+    font-size: 12px;  
+}
+#fav-list > div > h6{
+    font-weight: bold;
+}
+#fav-list > div > button{
+    padding: 10px 30px;
+    display: block;
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    border: none;
+    margin-bottom: 20px;
+    background-color: orange;
+    color: white;
+}
+#fav-list > div > button:hover{
+    background-color: rgb(251, 206, 122);
+    color: black;
+}
+#fav-list > div > h6{
+    border: 1px solid black;
+    text-align: center;
+    margin-left: 20px;
+    padding: 15px;
+    width: 40%;
+    display: inline-flex;
+}
+#msg{
+    text-align: center;
+    margin-top: 200px;
+    margin-bottom: 300px;
+    display: none;
+}
+#msg > a > button{
+    padding: 10px 30px;
+    margin-top: 30px;
+    border-radius: 30px;
+    background-color: orange;
+    color: white;
+    border: none;
+}
+#msg > a > button:hover{
+    background-color: rgb(251, 206, 122);
+    color: black;
+}

@@ -1,0 +1,74 @@
+#products-list{
+    display: grid;
+    width: 90%;
+    margin: auto;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: auto;
+    gap: 20px;
+}
+#products-list > div{
+    padding: 10px;
+    margin-top: 40px;
+    overflow: visible;
+}
+#products-list > div:hover{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    padding: 20px;
+    cursor: pointer;
+}
+#products-list > div > img{
+    width: 300px;
+    height: 400px;
+}
+#products-list > div > img ~ img{
+    width: 30px;
+    height: 30px;
+    float: right;
+    background-color: white;
+    padding: 7px;
+    border-radius: 15px;
+    position: absolute;
+    transform: translate(-50px, 10px);
+}
+#products-list > div > img ~ img:hover{
+    cursor: pointer;
+    width: 35px;
+    height: 35px;
+}
+#products-list > div > h4{
+    margin-top: 10px;
+    font-weight: 500;
+}
+#products-list > div > h5{
+    font-weight: bold;
+}
+#products-list > div > p{
+    color: #5D5E5C; 
+    font-size: 12px;  
+}
+#products-list > div > h6{
+    font-weight: bold;
+}
+#products-list > div > button{
+    padding: 10px 30px;
+    display: block;
+    width: 80%;
+    margin: auto;
+    margin-top: 20px;
+    border: none;
+    margin-bottom: 20px;
+    background-color: orange;
+    color: white;
+}
+#products-list > div > button:hover{
+    background-color: rgb(251, 206, 122);
+    color: black;
+}
+#products-list > div > h6{
+    border: 1px solid black;
+    text-align: center;
+    margin-left: 20px;
+    padding: 15px;
+    width: 40%;
+    display: inline-flex;
+}

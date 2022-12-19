@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jeevan Shailee</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./Styles/index.css">
+    <link rel="stylesheet" href="./Styles/signin.css">
+</head>
+<body>
+    <!--------------------------------------- Navbar --------------------------------------->
+    <div id="navbar">
+        <a href="./index.html"><img src="./Images/js-logo.png" alt="logo"></a>
+        <ul>
+            <a href="./products.html" class="hov">
+                <li>Women</li>
+            </a>
+            <a href="./products.html">
+                <li>Men</li>
+            </a>
+            <a href="./products.html">
+                <li>Kids</li>
+            </a>
+            <a href="./products.html">
+                <li>Shoes & Bags</li>
+            </a>
+            <a href="./products.html">
+                <li>Beauty</li>
+            </a>
+        </ul>
+        <div id="search">
+            <i class="fa fa-search"></i>
+            <input type="text" placeholder="What are you Looking For?" id="search-text">
+            <i class="fa fa-close" id="close"></i>
+        </div>
+        <ul>
+            <a href="">
+                <li>More</li>
+            </a>
+            <a href="">
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22px" height="22px" fill="currentColor" class="bi bi-person" viewBox="0 0 16 16">
+                    <path d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0Zm4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4Zm-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10c-2.29 0-3.516.68-4.168 1.332-.678.678-.83 1.418-.832 1.664h10Z"/>
+                     </svg>
+                </li>
+            </a>
+            <a href="">
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22px" height="22px" fill="currentColor" class="bi bi-suit-heart" viewBox="0 0 16 16">
+                        <path d="m8 6.236-.894-1.789c-.222-.443-.607-1.08-1.152-1.595C5.418 2.345 4.776 2 4 2 2.324 2 1 3.326 1 4.92c0 1.211.554 2.066 1.868 3.37.337.334.721.695 1.146 1.093C5.122 10.423 6.5 11.717 8 13.447c1.5-1.73 2.878-3.024 3.986-4.064.425-.398.81-.76 1.146-1.093C14.446 6.986 15 6.131 15 4.92 15 3.326 13.676 2 12 2c-.777 0-1.418.345-1.954.852-.545.515-.93 1.152-1.152 1.595L8 6.236zm.392 8.292a.513.513 0 0 1-.784 0c-1.601-1.902-3.05-3.262-4.243-4.381C1.3 8.208 0 6.989 0 4.92 0 2.755 1.79 1 4 1c1.6 0 2.719 1.05 3.404 2.008.26.365.458.716.596.992a7.55 7.55 0 0 1 .596-.992C9.281 2.049 10.4 1 12 1c2.21 0 4 1.755 4 3.92 0 2.069-1.3 3.288-3.365 5.227-1.193 1.12-2.642 2.48-4.243 4.38z"/>
+                      </svg>  
+                </li>
+            </a>
+            <a href="">
+                <li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="22px" height="22px" fill="currentColor" class="bi bi-handbag" viewBox="0 0 16 16">
+                        <path d="M8 1a2 2 0 0 1 2 2v2H6V3a2 2 0 0 1 2-2zm3 4V3a3 3 0 1 0-6 0v2H3.36a1.5 1.5 0 0 0-1.483 1.277L.85 13.13A2.5 2.5 0 0 0 3.322 16h9.355a2.5 2.5 0 0 0 2.473-2.87l-1.028-6.853A1.5 1.5 0 0 0 12.64 5H11zm-1 1v1.5a.5.5 0 0 0 1 0V6h1.639a.5.5 0 0 1 .494.426l1.028 6.851A1.5 1.5 0 0 1 12.678 15H3.322a1.5 1.5 0 0 1-1.483-1.723l1.028-6.851A.5.5 0 0 1 3.36 6H5v1.5a.5.5 0 1 0 1 0V6h4z"/>
+                      </svg>
+                </li>
+            </a>
+        </ul>
+    </div>
+
+
+    <!--------------------------------------------------Sign In-------------------------------------->
+
+    <form id="container" action="" method="post">
+        <h1>Sign up or Sign in</h1>
+        <p>Enjoy the convenience of a single account across all participating brands
+        </p>
+
+        <h6>Mobile Number</h6>
+        <div class="input-text">
+            <h6>+91</h6>
+            <input type="number" maxlength="10" placeholder="Enter your mobile number" id="mobile">
+            <i class="fa fa-close" id="clear-number"></i>
+        </div>
+        <p id="account-status"></p>
+
+        <h6>Name</h6>
+        <div class="input-text">
+            <input type="text" placeholder="Enter you name" id="name">
+        </div>
+
+        <h6>Password</h6>
+        <div class="input-text">
+            <input type="password" placeholder="Enter password" id="password">
+        </div>
+
+        <p class="last-para">By creating your account you agree to our <span class="span-orange">Terms & Conditions</span></p>
+
+        <hr>
+
+        <input type="submit" id="continue" value="Continue">
+    
+
+        <!-------------------------------------------Javascript----------------------------------------->
+        <script src="./Scripts/signin.js"></script>
+    </form>
+
+
+
+
+
+
+
+    <!--------------------------------------Footer ------------------------------------->
+    <hr>
+
+    <div class="footer-top">
+        <div class="subscribe">
+            <h5>Subscribe to our awesome emails.</h5>
+            <p>Get our latest offers and news straight in your inbox.</p>
+
+            <input type="text" placeholder="Please enter an email address">
+            <button>Subscribe</button>
+        </div>
+        <div class="download">
+            <h5>Download our apps</h5>
+            <p>Shop our products and offers on-the-go.</p>
+
+            <img src="./Images/app-store.png" alt="">
+            <img src="./Images/play-store.png" alt="">
+        </div>
+    </div>
+
+    <hr>
+
+
+    <div class="footer-bottom">
+        <div>
+            <ul>
+                <li>Women</li>
+                <a href=""><li>Tops</li></a>
+                <a href=""><li>Ethenicwear</li></a>
+                <a href=""><li>Bottoms</li></a>
+                <a href=""><li>Dresses and Jumpsuits</li></a>
+                <a href=""><li>Winter wears</li></a>
+                <a href=""><li>Lingerie</li></a>
+                <a href=""><li>Night wears</li></a>
+                <a href=""><li>Sportswear</li></a>
+                <a href=""><li>Beauty</li></a>
+                <a href=""><li>Watches and Sunglasses</li></a>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>Men</li>
+                <a href=""><li>Tops</li></a>
+                <a href=""><li>Bottoms</li></a>
+                <a href=""><li>Ethenicwear</li></a>
+                <a href=""><li>Winter wears</li></a>
+                <a href=""><li>Sportswear</li></a>
+                <a href=""><li>Innerwear</li></a>
+                <a href=""><li>Grooming</li></a>
+                <a href=""><li>Watches</li></a>  
+                <a href=""><li>Sunglasses</li></a>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>Kids</li>
+                <a href=""><li>Girls Clothing</li></a>
+                <a href=""><li>Boys clothing</li></a>
+                <a href=""><li>Infants Girls</li></a>
+                <a href=""><li>Infants Boys</li></a>
+                <a href=""><li>Winterers</li></a>
+                <a href=""><li>Add ons</li></a>
+                <a href=""><li>The Teen Shop</li></a>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>Shoes & Bags</li>
+                <a href=""><li>Womens</li></a>
+                <a href=""><li>Men</li></a>
+                <a href=""><li>Boys</li></a>
+                <a href=""><li>Girls</li></a>
+                <a href=""><li>Women Accessories</li></a>
+                <a href=""><li>Men Accessories</li></a>
+                <a href=""><li>Essential</li></a>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>Beauty</li>
+                <a href=""><li>Makeup Eyes</li></a>
+                <a href=""><li>Makeup Face</li></a>
+                <a href=""><li>Makeup Lips</li></a>
+                <a href=""><li>Makeup Nails</li></a>
+                <a href=""><li>Perfumes</li></a>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>Explore</li>
+                <a href=""><li>Online Offers</li></a>
+                <a href=""><li>Store Offers</li></a>
+                <a href=""><li>Online Gift Cards</li></a>
+                <a href=""><li>Store Gift Cards</li></a>
+                <a href=""><li>Store Nearby</li></a>
+                <a href=""><li>EDGE Membership</li></a>
+                <a href=""><li>Shop on WhatsApp</li></a>
+                <a href=""><li>Fashion VLOG</li></a>
+                <a href=""><li>Join CIRCLEMAG</li></a>
+                <a href=""><li>SBI Offers</li></a>
+                <a href=""><li>Home centre</li></a>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>About</li>
+                <a href=""><li>About us</li></a>
+                <a href=""><li>Careers</li></a>
+                <a href=""><li>Take a Tour</li></a>
+                <a href=""><li>Blog</li></a>
+                <a href=""><li>Store Locator</li></a>
+                <a href=""><li>Landmark Cares</li></a>
+            </ul>
+        </div>
+        <div>
+            <ul>
+                <li>Help</li>
+                <a href=""><li>Contact us</li></a>
+                <a href=""><li>Shipping</li></a>
+                <a href=""><li>Returns Process</li></a>
+                <a href=""><li>Returns Policy</li></a>
+                <a href=""><li>Help Center</li></a>
+            </ul>
+        </div>
+    </div>
+
+
+    <hr>
+
+    <div class="contact">
+        <a href="">
+            <div>
+                <div><img src="./Images/phone.png" alt=""></div>
+                <div>
+                    <p>Talk to us</p>
+                    <p>1800-786-7860</p>
+                </div>
+            </div>
+        </a>
+        <a href="">
+            <div>
+                <div><img src="./Images/help.png" alt=""></div>
+                <div>
+                    <p>Helpcentre</p>
+                    <p>help.jeevanshailee.com</p>
+                </div>
+            </div>
+        </a>
+        <a href="">
+            <div>
+                <div><img src="./Images/mail.png" alt=""></div>
+                <div>
+                    <p>Write to us</p>
+                    <p>help@jeevanshailee.com</p>
+                </div>
+            </div>
+        </a>
+            
+        <div class="social-media">
+            <a href=""><img src="./Images/facebook.png" alt=""></a>
+            <a href=""><img src="./Images/twitter.png" alt=""></a>
+            <a href=""><img src="./Images/insta.png" alt=""></a>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="last">
+        <a href=""><img src="./Images/js-logo2.png" alt=""></a>
+        <p>&#169; 2022 Masai School <br> <span class="span-tag">Terms & Conditions</span> - <span class="span-tag">Privacy Policy</span></p>
+    </div>
+
+    
+    <!-- --------------------------------------JavaScript ------------------------------------------------------>
+        <script src="./Scripts/index.js"></script>
+</body>
+</html>
